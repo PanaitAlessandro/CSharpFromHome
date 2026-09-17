@@ -26,7 +26,7 @@ namespace Esercizio3
 
         static void ScriviOttimizzato(int numeroNomi)
         {
-
+            
             using (StreamWriter sw = new StreamWriter("studenti.txt"))
             {
                 
