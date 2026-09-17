@@ -9,7 +9,7 @@ namespace EsempioIsASemplice
     public class Automobile
     {
         public string Modello { get; set; }
-
+        
         public void Guida()
         {
             Console.WriteLine($"Guidando la {Modello}...");
