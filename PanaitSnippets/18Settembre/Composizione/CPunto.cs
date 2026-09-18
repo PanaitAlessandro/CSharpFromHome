@@ -30,8 +30,8 @@ namespace CerchioComposizione
 
         public CPunto()
         {
-            X = 0;
-            Y = 0;
+            _x = 0;
+            _y = 0;
         }
 
         public CPunto(int x, int y)
