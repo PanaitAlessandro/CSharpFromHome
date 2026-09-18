@@ -7,6 +7,7 @@ namespace CerchioComposizione
         private int _x;
         private int _y;
 
+        /* come richiesta dalla consegna, rimuovo le proprierty, e chiamo col ToString() ogni classe
         public int X
         {
             get { return _x; }
@@ -24,6 +25,7 @@ namespace CerchioComposizione
                 _y = value;
             }
         }
+        */
 
 
         public CPunto()
@@ -34,8 +36,13 @@ namespace CerchioComposizione
 
         public CPunto(int x, int y)
         {
-            X = x;
-            Y = y;
+            _x = x;
+            _y = y;
+        }
+
+        public override string ToString()
+        {
+            return $"X: {_x}, Y: {_y}";
         }
     }
 }
