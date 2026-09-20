@@ -35,5 +35,16 @@ namespace Esercizio1
                 _modello = value;
             }
         }
+
+        public CAutoElettrica() : this(1, "SCONOSCIUTO", "Sconosciuta", "Sconosciuta", 1,0)
+        {
+            
+        }
+
+        public CAutoElettrica(int autonomia, string modello, string marca, string targa, int cilindrata, int chilometraggio) : base(marca,targa,cilindrata,chilometraggio)
+        {
+            Autonomia = autonomia;
+            Modello = modello;
+        } // da aggiungere: string marca, string targa, int cilindrata,int chilometraggio
     }
 }
