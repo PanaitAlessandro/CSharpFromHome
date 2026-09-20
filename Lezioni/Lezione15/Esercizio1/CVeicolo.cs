@@ -35,7 +35,7 @@ namespace Esercizio1
         public int Chilometraggio
         {
             get { return _chilometraggio; }
-            set
+            protected set
             {
                 if(value < 0)
                 {
@@ -56,6 +56,15 @@ namespace Esercizio1
             Targa = targa;
             Cilindrata = cilindrata;
             Chilometraggio = chilometraggio;
+        }
+
+        public void AggiornaChilometri(int kmPercorsi)
+        {
+            if(kmPercorsi < 0)
+            {
+                throw new ArgumentException("I km non possono essere negativi");
+            }
+            Chilometraggio += kmPercorsi;
         }
 
         public override string ToString()
