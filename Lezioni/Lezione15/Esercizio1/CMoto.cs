@@ -21,6 +21,19 @@ namespace Esercizio1
             }
         }
 
-        
+        public CMoto() : this("Sconosciuta", "Sconosciuta", 1, 0)
+        {
+        }
+
+        public CMoto(string marca, string targa, int cilindrata,int chilometraggio) : base(targa,cilindrata,chilometraggio)
+        {
+            Marca = marca;
+        }
+
+        public override string ToString()
+        {
+            return $"Marca: {Marca}, [Veicolo: {base.ToString()}]";
+        }
+
     }
 }
