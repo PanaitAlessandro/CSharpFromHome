@@ -12,6 +12,9 @@ namespace Esercizio1
             CAutoElettrica tesla = new CAutoElettrica(100,"Tesla model y", "Tesla","ABCED",200,4000); // devo mettere: int autonomia, string modello, string marca, string targa, int cilindrata, int chilometraggio
 
             System.Console.WriteLine(tesla);
+
+            tesla.AggiornaChilometri(500);
+            System.Console.WriteLine(tesla.Chilometraggio);
         }
     }
 }

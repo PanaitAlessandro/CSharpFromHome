@@ -8,7 +8,7 @@ namespace Esercizio1
         {
             if(string.IsNullOrWhiteSpace(valore))
             {
-                throw new ArgumentException($"Il campo '{nomeCampo}' non può essere vuoto.");
+                throw new ArgumentException($"Il campo '{campo}' non può essere vuoto.");
             }
             return valore;
         }
