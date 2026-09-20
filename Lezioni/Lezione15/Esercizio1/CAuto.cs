@@ -29,5 +29,10 @@ namespace Esercizio1
         {
             Marca = marca;
         }
+
+        public override string ToString()
+        {
+            return $"Marca: {Marca}, [Veicolo: {base.ToString()}]";
+        }
     }
 }
