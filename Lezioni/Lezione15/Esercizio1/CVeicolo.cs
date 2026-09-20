@@ -51,6 +51,18 @@ namespace Esercizio1
             }
         }
 
+        public CVeicolo() : this("SCONOSCIUTA", 1,0)
+        {
+            
+        }
+
+        public CVeicolo(string targa, int cilindrata, int chilometraggio)
+        {
+            Targa = targa;
+            Cilindrata = cilindrata;
+            Chilometraggio = chilometraggio;
+        }
+
         public override string ToString()
         {
             return $"Targa: {Targa}, Cilindrata: {Cilindrata}, Chilometraggio: {Chilometraggio}";

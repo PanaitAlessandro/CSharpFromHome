@@ -20,5 +20,15 @@ namespace Esercizio1
                 _marca = value;
             }
         }
+
+        public CAuto()
+        {
+            Marca = "Sconosciuta";
+        }
+
+        public CAuto(string marca, string targa, int cilindrata,int chilometraggio) : base(targa,cilindrata,chilometraggio)
+        {
+            
+        }
     }
 }
