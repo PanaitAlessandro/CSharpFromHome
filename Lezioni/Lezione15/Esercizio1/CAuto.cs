@@ -21,14 +21,13 @@ namespace Esercizio1
             }
         }
 
-        public CAuto()
+        public CAuto() : this("Sconosciuta", "Sconosciuta", 1,0)
         {
-            Marca = "Sconosciuta";
         }
 
         public CAuto(string marca, string targa, int cilindrata,int chilometraggio) : base(targa,cilindrata,chilometraggio)
         {
-            
+            Marca = marca;
         }
     }
 }
