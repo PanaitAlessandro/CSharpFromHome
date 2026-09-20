@@ -46,5 +46,9 @@ namespace Esercizio1
             Autonomia = autonomia;
             Modello = modello;
         } // da aggiungere: string marca, string targa, int cilindrata,int chilometraggio
+        public override string ToString()
+        {
+            return $"Autonomia: {Autonomia}, Modello: {Modello}, [Auto: {base.ToString()}]";
+        }
     }
 }
