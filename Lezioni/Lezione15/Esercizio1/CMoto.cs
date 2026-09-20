@@ -13,11 +13,7 @@ namespace Esercizio1
             get { return _marca; }
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("La marca non può essere null");
-                }
-                _marca = value;
+                _marca = Controlli.NonVuota(value, "Marca");
             }
         }
 

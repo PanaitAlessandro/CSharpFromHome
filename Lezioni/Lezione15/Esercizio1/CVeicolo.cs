@@ -15,12 +15,7 @@ namespace Esercizio1
             get { return _targa; }
             set
             {
-                if(string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("la targa non può essere null");
-                }
-
-                _targa = value;
+                _targa = Controlli.NonVuota(value, "Targa");
             }
         }
         public int Cilindrata

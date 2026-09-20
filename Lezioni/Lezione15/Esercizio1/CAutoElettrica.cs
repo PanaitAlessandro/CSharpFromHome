@@ -28,11 +28,7 @@ namespace Esercizio1
             get {return _modello;}
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("è la sesta volta che faccio questo controllo. IL MODELLO NON PUO ESSERE NULL");
-                }
-                _modello = value;
+                _modello = Controlli.NonVuota(value, "Modello");
             }
         }
 
