@@ -51,6 +51,9 @@ namespace Esercizio1
             }
         }
 
-        
+        public override string ToString()
+        {
+            return $"Targa: {Targa}, Cilindrata: {Cilindrata}, Chilometraggio: {Chilometraggio}";
+        }
     }
 }
