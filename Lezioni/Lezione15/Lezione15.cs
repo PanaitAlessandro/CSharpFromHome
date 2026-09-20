@@ -165,4 +165,28 @@ namespace Lezione15
             return base.ToString() + $", batteria {CapacitaBatteriaKwh} kWh";
         }
     }
+
+    class Program
+    {
+static void Main(string[] args)
+{
+    Console.WriteLine("1) Metodi e proprieta' EREDITATI");
+    Moto m = new Moto("AB123CD", "Yamaha", 12000, 600);
+    m.AggiornaChilometraggio(150);
+    Console.WriteLine("   " + m);
+
+    AutoElettrica e = new AutoElettrica("EV001XY", "Tesla", 8000, 4, 75);
+    e.AggiornaChilometraggio(50);
+    Console.WriteLine("   " + e);
+
+    Console.WriteLine("2) Costruttori di default");
+    Console.WriteLine("   " + new Veicolo());
+    Console.WriteLine("   " + new Moto());
+    Console.WriteLine("   " + new AutoElettrica());
+
+    Console.WriteLine("3) Il setter protected, usato da una classe derivata");
+    m.SostituisciContachilometri(0);
+    Console.WriteLine("   " + m);
+}
+    }
 }
