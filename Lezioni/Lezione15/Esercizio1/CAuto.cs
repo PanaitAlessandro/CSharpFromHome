@@ -2,5 +2,23 @@ using System;
 
 namespace Esercizio1
 {
-    
+    public class CAuto : CVeicolo
+    {
+        // per l'auto direi di aggiungerci solo la marca
+
+        private string _marca;
+
+        public string Marca
+        {
+            get { return _marca ;}
+            set
+            {
+                if(string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("La marca non può essere null");
+                }
+                _marca = value;
+            }
+        }
+    }
 }
