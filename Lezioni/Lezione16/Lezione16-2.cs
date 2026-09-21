@@ -32,6 +32,14 @@ public class CAutoElettrica : CAuto
     }
 }
 
+public class CScooter : CMoto
+{
+    public override string Rumore()
+    {
+        return "Ring " + base.Rumore();
+    }
+}
+
 class Program
 {
     static void Main(string[] args)
@@ -40,7 +48,8 @@ class Program
         {
             new CMoto(),
             new CAuto(),
-            new CAutoElettrica()
+            new CAutoElettrica(),
+            new CScooter()
         };
 
         foreach (CVeicolo veicolo in v)
