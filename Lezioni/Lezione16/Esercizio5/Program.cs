@@ -1,25 +1,3 @@
-/*
-Esercizio 5: il tagliando.
-
-Regole:
-- ogni veicolo:             100 euro base
-- moto:                     + Cilindrata
-- auto:                     + 25 euro per ogni porta
-
-Da fare:
-1. In CVeicolo: metodo virtual CalcolaCostoTagliando()
-2. Nelle figlie: override
-3. Qui sotto: il ciclo foreach che stampa tipo e costo, e il totale
-
-Output atteso per il parco di 4 veicoli:
-CMoto: 140 euro
-CMoto: 170 euro
-CAuto: 130 euro
-CAutoElettrica: 60 euro
-totale: 500 euro
-
-Con lo scooter aggiunto (facoltativo): CScooter: 76 euro, totale: 576 euro
-*/
 using System;
 
 namespace Esercizio5
