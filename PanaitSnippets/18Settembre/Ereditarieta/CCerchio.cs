@@ -9,7 +9,7 @@ namespace CerchioEreditarieta
 
         // dato che siamo sotto forma ISA (eredità); non devo mettere un campo 'private CPunto centro;'
 
-        public double Raggio
+        /*public double Raggio
         {
             get {return _raggio;}
             set
@@ -21,20 +21,25 @@ namespace CerchioEreditarieta
                 _raggio = value;
             }
         }
+        */
 
         public CCerchio()
         {
-            Raggio = 1;
+            _raggio = 1;
         }
 
         public CCerchio(double raggio, int x,int y) : base(x, y) // base() in questo caso richiama il costruttore di CPunto e gli da i parametri
         {
-            Raggio = raggio;
+            if (raggio <= 0)
+            {
+                throw new ArgumentException("il raggio non può essere minore di zero!");
+            }
+            _raggio = raggio;
         }
 
         public override string ToString()
         {
-            return $"Raggio: {Raggio}, Centro: {base.ToString()}";
+            return $"Raggio: {_raggio}, Centro: {base.ToString()}";
         }
 
     }

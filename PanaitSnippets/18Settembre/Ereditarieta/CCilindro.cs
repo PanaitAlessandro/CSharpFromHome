@@ -6,7 +6,7 @@ namespace CerchioEreditarieta
     {
         private double _altezza;
 
-        public double Altezza
+        /*public double Altezza
         {
             get { return _altezza; }
             set
@@ -17,21 +17,25 @@ namespace CerchioEreditarieta
                 }
                 _altezza = value;
             }
-        }
+        }*/
 
         public CCilindro()
         {
-            Altezza = 1;
+            _altezza = 1;
         }
 
         public CCilindro(double altezza, double raggio, int x, int y) : base(raggio, x, y)
         {
-            Altezza = altezza;
+            if (altezza <= 0)
+            {
+                throw new ArgumentException("HEY! L'altezza non può avere valori <= 0");
+            }
+            _altezza = altezza;
         }
 
         public override string ToString()
         {
-            return $"Altezza: {Altezza}, Base: {base.ToString()}";
+            return $"Altezza: {_altezza}, Base: {base.ToString()}";
         } 
     }
 }
