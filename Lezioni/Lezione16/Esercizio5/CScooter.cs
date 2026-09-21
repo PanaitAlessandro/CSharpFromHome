@@ -2,8 +2,7 @@ using System;
 
 namespace Esercizio5
 {
-    // FACOLTATIVA: serve solo se vuoi provare lo scooter (100 + Cilindrata ).
-    // Qui c'è solo il costruttore: l'override lo scrivi tu.
+    // FACOLTATIVA: serve solo per provare lo scooter (100 + Cilindrata ).
     public class CScooter : CMoto
     {
         public CScooter() : base()
