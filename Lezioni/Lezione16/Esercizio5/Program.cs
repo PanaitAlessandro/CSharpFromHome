@@ -1,14 +1,12 @@
 /*
 Esercizio 5: il tagliando.
 
-Regole (tariffe di esempio, in euro interi):
-- ogni veicolo:             80 euro base
-- moto:                     + Cilindrata / 10
-- auto:                     + 10 euro per ogni porta
-- auto elettrica:           60 euro fissi (non chiama base)
-- scooter (facoltativo):    70 + Cilindrata / 20
+Regole:
+- ogni veicolo:             100 euro base
+- moto:                     + Cilindrata
+- auto:                     + 25 euro per ogni porta
 
-Da fare (tocca a te):
+Da fare:
 1. In CVeicolo: metodo virtual CalcolaCostoTagliando()
 2. Nelle figlie: override
 3. Qui sotto: il ciclo foreach che stampa tipo e costo, e il totale
