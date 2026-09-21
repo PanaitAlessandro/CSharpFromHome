@@ -30,6 +30,11 @@ namespace Esercizio5
             Autonomia = autonomia;
         }
 
+        public override int CalcolaCostoTagliando()
+        {
+            return base.CalcolaCostoTagliando() + Autonomia / 3;
+        }
+
         public override string ToString()
         {
             return base.ToString() + $", autonomia {Autonomia} km";
