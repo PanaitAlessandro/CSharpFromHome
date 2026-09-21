@@ -33,10 +33,20 @@ namespace Esercizio5
                 new CMoto("AB123CD", "Yamaha", "MT-07", 12000, 600),
                 new CMoto("XY999ZZ", "Honda", "CBR", 5000, 900),
                 new CAuto("FG456HJ", "Fiat", "Panda", 60000, 5),
-                new CAutoElettrica("ABCED", "Tesla", "Model Y", 4000, 5, 450)
+                new CAutoElettrica("ABCED", "Tesla", "Model Y", 4000, 5, 450),
+                new CScooter()
             };
 
-            // TODO: il ciclo foreach con il costo di ogni veicolo e il totale
+            int somma = 0;
+
+            foreach (CVeicolo v in parco)
+            {
+                int costo = v.CalcolaCostoTagliando();
+                System.Console.WriteLine($"{v.GetType().Name}: {costo} euro ");
+                somma += costo;
+            }
+
+            System.Console.WriteLine($"Totale: {somma} euro");
         }
     }
 }

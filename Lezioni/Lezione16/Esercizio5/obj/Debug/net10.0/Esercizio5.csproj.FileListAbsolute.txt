@@ -1,0 +1,15 @@
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/bin/Debug/net10.0/Esercizio5
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/bin/Debug/net10.0/Esercizio5.deps.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/bin/Debug/net10.0/Esercizio5.runtimeconfig.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/bin/Debug/net10.0/Esercizio5.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/bin/Debug/net10.0/Esercizio5.pdb
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.AssemblyInfoInputs.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.AssemblyInfo.cs
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.csproj.CoreCompileInputs.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.sourcelink.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/refint/Esercizio5.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.pdb
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/Esercizio5.genruntimeconfig.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/Lezioni/Lezione16/Esercizio5/obj/Debug/net10.0/ref/Esercizio5.dll
