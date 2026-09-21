@@ -30,6 +30,11 @@ namespace Esercizio5
             Cilindrata = cilindrata;
         }
 
+        public override int CalcolaCostoTagliando()
+        {
+            return base.CalcolaCostoTagliando() + Cilindrata * 1;
+        }
+
         public override string ToString()
         {
             return base.ToString() + $", {Cilindrata} cc";
