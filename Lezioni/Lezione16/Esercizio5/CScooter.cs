@@ -13,5 +13,10 @@ namespace Esercizio5
             : base(targa, marca, modello, chilometraggio, cilindrata)
         {
         }
+
+        public override int CalcolaCostoTagliando()
+        {
+            return base.CalcolaCostoTagliando() + Cilindrata;
+        }
     }
 }
