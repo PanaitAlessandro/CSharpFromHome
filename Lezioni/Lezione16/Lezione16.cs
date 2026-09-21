@@ -31,4 +31,6 @@ public class CAuto2 : CVeicolo2
         return "Brum";
     }
 }
+
+// quindi: essenzialmente la classe padre fornisce alle figlie il suo metodo, e poi, se le figlie hanno un metodo che fa la stessa cosa, possono sovrascriverla
 }
