@@ -72,6 +72,11 @@ namespace Esercizio5
             Chilometraggio += kmPercorsi;
         }
 
+        public virtual int CalcolaCostoTagliando()
+        {
+            return 100;
+        }
+
         public override string ToString()
         {
             return $"{Targa} ({Marca} {Modello}), {Chilometraggio} km";
