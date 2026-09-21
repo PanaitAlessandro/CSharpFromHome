@@ -30,6 +30,11 @@ namespace Esercizio5
             NumeroPorte = numeroPorte;
         }
 
+        public override int CalcolaCostoTagliando()
+        {
+            return base.CalcolaCostoTagliando() + NumeroPorte * 25;
+        }
+
         public override string ToString()
         {
             return base.ToString() + $", {NumeroPorte} porte";
