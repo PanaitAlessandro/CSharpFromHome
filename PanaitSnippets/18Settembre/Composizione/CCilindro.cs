@@ -44,6 +44,16 @@ namespace CerchioComposizione
             _base = new CCerchio(raggio,x,y);
         }
 
+        public CCilindro(double altezza, CCerchio baseCilindro)
+        {
+            if (altezza <= 0)
+            {
+                throw new ArgumentException("L'altezza non può essere minore di Zero");
+            }
+            _altezza = altezza;
+            _base = baseCilindro;
+        }
+
         public override string ToString()
         {
             return $"Altezza: {_altezza}, Base: [{_base.ToString()}]";
