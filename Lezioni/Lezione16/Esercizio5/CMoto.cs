@@ -32,7 +32,7 @@ namespace Esercizio5
 
         public override int CalcolaCostoTagliando()
         {
-            return base.CalcolaCostoTagliando() + Cilindrata * 1;
+            return base.CalcolaCostoTagliando() + Cilindrata;
         }
 
         public override string ToString()
