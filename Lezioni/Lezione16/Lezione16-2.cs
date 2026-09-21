@@ -57,4 +57,9 @@ class Program
             System.Console.WriteLine(veicolo.Rumore());
         }
     }
+    /*
+    new CMoto() crea l'oggetto in memoria. L'oggetto sa di essere una moto.
+    v tiene in mano quell'oggetto. La sua etichetta dice CVeicolo.
+    Alla chiamata v.Rumore(), il computer vede che Rumore è virtual. Non decide subito.
+    Mentre il programma gira, guarda l'oggetto vero (CMoto) e chiede: "hai una tua versione di Rumore?" Sì ->esegue quella -> "Vroom".
 }
