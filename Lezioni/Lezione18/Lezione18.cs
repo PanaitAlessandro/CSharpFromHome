@@ -12,3 +12,26 @@ finally: blocco che gira SEMPRE, che l'eccezione sia scattata o no. Per pulizia 
 Eccezione custom: classe tua che deriva da Exception, per errori specifici del tuo dominio invece di usare sempre le generiche del framework.
 */
 }
+
+public interface IStampabile
+{
+    string Descrizione();
+}
+
+public interface ILoggabile
+{
+    string Descrizione();
+}
+
+public class CVeicoloTest : IStampabile, ILoggabile
+{
+    public string IStampabile.Descrizione()
+    {
+        return "Descrizione per il cliente";
+    }
+
+    public string ILoggabile.Descrizione()
+    {
+        return "Descrizione per il log tecnico";
+    }
+}
