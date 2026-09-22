@@ -24,6 +24,6 @@ namespace  Lezione17
         }
     }
 
-    public abstract int CalcolaCostoTagliando();
+    public abstract int CalcolaCostoTagliando(); // un metodo può essere astratto ma non avrà nessun contenuto {}
 }
 }
