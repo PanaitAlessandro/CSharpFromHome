@@ -46,5 +46,21 @@ class Program
 
         ILoggabile l = v;
         System.Console.WriteLine(l.Descrizione());
+
+
+        // try catch
+
+        Console.WriteLine("Inizio programma.");
+
+        try
+        {
+            int numero = int.Parse("ciao");
+        }
+        catch (FormatException e)
+        {
+             Console.WriteLine("Ho catturato un errore: " + e.Message);
+        }
+
+        Console.WriteLine("Il programma continua normalmente.");        
     }
 }
