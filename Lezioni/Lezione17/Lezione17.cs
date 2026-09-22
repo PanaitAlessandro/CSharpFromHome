@@ -29,6 +29,12 @@ namespace  Lezione17
     public abstract int CalcolaCostoTagliando(); // un metodo può essere astratto ma non avrà nessun contenuto {}
 }
 
+
+    public interface IDescrizione
+    {
+        string Descrizione();
+    }
+
     public class CAuto : CVeicolo, IDescrizione
     {
         // errore ch è comjne: non chiamare il metodo CalcolaCostoTagliando()
@@ -46,11 +52,6 @@ namespace  Lezione17
         }
     }
 
-    public interface IDescrizione
-    {
-        string Descrizione();
-    }
-
 class Program
     {
         static void Main(string[] args)
@@ -58,6 +59,14 @@ class Program
             CAuto a = new CAuto();
             System.Console.WriteLine(a.CalcolaCostoTagliando());
             System.Console.WriteLine(a.Descrizione());
+
+
+            IDescrizione[] stampabili = new IDescrizione[]
+            {
+                new CAuto()
+            };
+
+            stampabili[0].Descrizione();
         }
     }
 }
