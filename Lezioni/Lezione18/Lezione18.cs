@@ -25,13 +25,13 @@ public interface ILoggabile
 
 public class CVeicoloTest : IStampabile, ILoggabile
 {
-    public string IStampabile.Descrizione()
+    public string IStampabile.Descrizione() // nel main non posso passare CVeicoloTest v = new ... e poi v.Descrizione()
     {
         return "Descrizione per il cliente";
     }
 
     public string ILoggabile.Descrizione()
     {
-        return "Descrizione per il log tecnico";
+        return "Descrizione per il log tecnico"; // idem qui
     }
 }
