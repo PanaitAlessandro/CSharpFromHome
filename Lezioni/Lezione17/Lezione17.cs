@@ -66,7 +66,7 @@ class Program
                 new CAuto()
             };
 
-            stampabili[0].Descrizione();
+            stampabili[0].Descrizione(); // non valido: devo stamparlo con cw.
         }
     }
 }
