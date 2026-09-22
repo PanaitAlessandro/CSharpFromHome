@@ -31,7 +31,7 @@ class Program
     {
         static void Main(string[] args)
         {
-            
+            CVeicolo v = new CVeicolo(); // NON POSSO FARLO!
         }
     }
 }
