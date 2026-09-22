@@ -20,7 +20,8 @@ namespace  Lezione17
         }
         private set
         {
-            _targa = Controlli.NonVuota(value, "Targa"); // controlli è un metodo esterno
+           // _targa = Controlli.NonVuota(value, "Targa"); // controlli è un metodo esterno
+           _targa = value;
         }
     }
 
@@ -30,13 +31,21 @@ namespace  Lezione17
     public class CAuto : CVeicolo
     {
         // errore ch è comjne: non chiamare il metodo CalcolaCostoTagliando()
+
+        // ora lo chiamiamo:
+
+        public override int CalcolaCostoTagliando()
+        {
+            return 100;
+        }
     }
 
 class Program
     {
         static void Main(string[] args)
         {
-            CVeicolo v = new CVeicolo(); // NON POSSO FARLO!
+            CAuto a = new CAuto();
+            System.Console.WriteLine(a.CalcolaCostoTagliando());
         }
     }
 }
