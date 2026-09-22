@@ -43,5 +43,8 @@ class Program
         CVeicoloTest v = new CVeicoloTest();
         IStampabile s = v;
         System.Console.WriteLine(s.Descrizione());
+
+        ILoggabile l = v;
+        System.Console.WriteLine(l.Descrizione());
     }
 }
