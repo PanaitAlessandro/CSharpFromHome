@@ -58,15 +58,15 @@ class Program
         {
             if (elemento is CPunto p)
             {
-                Console.WriteLine($"Trovato Punto alle coordinate ({p.X}, {p.Y})");
+                Console.WriteLine(p);
             }
             else if (elemento is CCerchio c)
             {
-                Console.WriteLine($"Trovato Cerchio con raggio {c.Raggio} e centro ({c.Centro.X}, {c.Centro.Y})");
+                Console.WriteLine(c);
             }
             else if (elemento is CCilindro cl)
             {
-                Console.WriteLine($"Trovato Cilindro con altezza {cl.Altezza} e base di raggio {cl.Base.Raggio}");
+                Console.WriteLine(cl);
             }
         }
 
