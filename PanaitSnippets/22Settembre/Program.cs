@@ -6,8 +6,12 @@ public class CPunto : Object
         Y = y;
         }
 
-
+    public override string ToString()
+    {
+        return $"X: {X}, Y: {Y}";
+    }
 }
+
 
 // 2. Classe Cerchio (HA UN Punto)
 public class CCerchio : Object  
@@ -55,5 +59,7 @@ class Program
                 Console.WriteLine($"Trovato Cilindro con altezza {cl.Altezza} e base di raggio {cl.Base.Raggio}");
             }
         }
+
+        System.Console.WriteLine(contenitore[0]);
     }
 }
