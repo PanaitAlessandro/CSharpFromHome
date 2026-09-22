@@ -1,7 +1,12 @@
 public class CPunto : Object
 {
     public double X, Y;
-    public CPunto(double x, double y) { X = x; Y = y; }
+    public CPunto(double x, double y) { 
+        X = x; 
+        Y = y;
+        }
+
+
 }
 
 // 2. Classe Cerchio (HA UN Punto)
@@ -9,29 +14,32 @@ public class CCerchio : Object
 {
     public CPunto Centro; // HAS-A
     public double Raggio;
-    public CCerchio(double x, double y, double r) { Centro = new CPunto(x, y); Raggio = r; }
+    public CCerchio(double x, double y, double r) { 
+        Centro = new CPunto(x, y);
+        Raggio = r; 
+        }
 }
 
-// 3. Classe Cilindro (HA UN Cerchio)
 public class CCilindro :Object
 {
     public CCerchio Base; // HAS-A
     public double Altezza;
-    public CCilindro(double x, double y, double r, double h) { Base = new CCerchio(x, y, r); Altezza = h; }
+    public CCilindro(double x, double y, double r, double h) { 
+        Base = new CCerchio(x, y, r); 
+        Altezza = h; 
+        }
 }
 
 class Program
 {
     static void Main()
     {
-        // Un unico array generico che contiene tutto insieme
         object[] contenitore = new object[3];
 
         contenitore[0] = new CPunto(1, 2);
         contenitore[1] = new CCerchio(0, 0, 5);
         contenitore[2] = new CCilindro(3, 4, 2, 10);
 
-        // Ciclo unico per leggerli tutti insieme
         foreach (object elemento in contenitore)
         {
             if (elemento is CPunto p)
