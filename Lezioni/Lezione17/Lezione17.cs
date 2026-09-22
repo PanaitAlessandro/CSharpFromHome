@@ -20,7 +20,7 @@ namespace  Lezione17
         }
         private set
         {
-            _targa = Controlli.NonVuota(value, "Targa");
+            _targa = Controlli.NonVuota(value, "Targa"); // controlli è un metodo esterno
         }
     }
 
