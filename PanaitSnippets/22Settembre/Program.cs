@@ -22,6 +22,11 @@ public class CCerchio : Object
         Centro = new CPunto(x, y);
         Raggio = r; 
         }
+
+    public override string ToString()
+    {
+        return $"Raggio: {Raggio}, Centro: {Centro.ToString()}";
+    }
 }
 
 public class CCilindro :Object
@@ -32,6 +37,10 @@ public class CCilindro :Object
         Base = new CCerchio(x, y, r); 
         Altezza = h; 
         }
+    public override string ToString()
+    {
+    }
+
 }
 
 class Program
@@ -60,6 +69,6 @@ class Program
             }
         }
 
-        System.Console.WriteLine(contenitore[0]);
+        System.Console.WriteLine(contenitore[0]); // versione col to string
     }
 }
