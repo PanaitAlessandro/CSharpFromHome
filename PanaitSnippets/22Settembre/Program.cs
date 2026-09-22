@@ -39,6 +39,7 @@ public class CCilindro :Object
         }
     public override string ToString()
     {
+        return $"Altezza: {Altezza}, Base: {Base.ToString()}";
     }
 
 }
