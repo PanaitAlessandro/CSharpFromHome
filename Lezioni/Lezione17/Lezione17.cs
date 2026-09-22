@@ -27,6 +27,11 @@ namespace  Lezione17
     public abstract int CalcolaCostoTagliando(); // un metodo può essere astratto ma non avrà nessun contenuto {}
 }
 
+    public class CAuto : CVeicolo
+    {
+        // errore ch è comjne: non chiamare il metodo CalcolaCostoTagliando()
+    }
+
 class Program
     {
         static void Main(string[] args)
