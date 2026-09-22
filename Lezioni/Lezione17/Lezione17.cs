@@ -1,4 +1,5 @@
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace  Lezione17 
 {
@@ -28,7 +29,7 @@ namespace  Lezione17
     public abstract int CalcolaCostoTagliando(); // un metodo può essere astratto ma non avrà nessun contenuto {}
 }
 
-    public class CAuto : CVeicolo
+    public class CAuto : CVeicolo, IDescrizione
     {
         // errore ch è comjne: non chiamare il metodo CalcolaCostoTagliando()
 
@@ -38,6 +39,16 @@ namespace  Lezione17
         {
             return 100;
         }
+
+        public string Descrizione()
+        {
+            return "Bella auto";
+        }
+    }
+
+    public interface IDescrizione
+    {
+        string Descrizione();
     }
 
 class Program
@@ -46,6 +57,7 @@ class Program
         {
             CAuto a = new CAuto();
             System.Console.WriteLine(a.CalcolaCostoTagliando());
+            System.Console.WriteLine(a.Descrizione());
         }
     }
 }
