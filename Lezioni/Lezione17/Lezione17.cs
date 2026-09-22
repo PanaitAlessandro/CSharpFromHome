@@ -7,4 +7,23 @@ namespace  Lezione17
 
     // soluzione:
     // dire al compilatore "questo metodo DEVE essere riscritto da ogni figlia, e la base non si può creare da sola"
+
+    public abstract class CVeicolo // classe astratta: non pyò venir istanziata
+{
+    private string _targa;
+
+    public string Targa
+    {
+        get
+        {
+            return _targa;
+        }
+        private set
+        {
+            _targa = Controlli.NonVuota(value, "Targa");
+        }
+    }
+
+    public abstract int CalcolaCostoTagliando();
+}
 }
