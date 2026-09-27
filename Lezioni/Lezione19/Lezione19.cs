@@ -43,5 +43,42 @@ namespace Lezione19
 
     // il problema attuale è che noi possiamo creare più classi (facciamo l'esempio di un garage).. e da utenti senza accorgecene ne creiamo due per la stessa azienda...
     // per questo dobbiamo utilizzare il pattern singleton, ossia UNA e SOLO UNA classe.
+
+    public class CGaragePrincipale // singleton
+{
+    private static CGaragePrincipale _istanza;
+
+    private int _numeroVeicoli;
+
+    public int NumeroVeicoli
+    {
+        get { return _numeroVeicoli; }
+        private set { _numeroVeicoli = value; }
+    }
+
+    private CGaragePrincipale()
+    {
+        NumeroVeicoli = 0;
+        Console.WriteLine("Ho creato un NUOVO CGaragePrincipale (deve succedere una volta sola)");
+    }
+
+    public static CGaragePrincipale Istanza
+    {
+        get
+        {
+            if (_istanza == null)
+            {
+                _istanza = new CGaragePrincipale();
+            }
+
+            return _istanza;
+        }
+    }
+
+    public void AggiungiVeicolo()
+    {
+        NumeroVeicoli = NumeroVeicoli + 1;
+    }
+}
 }
 }
