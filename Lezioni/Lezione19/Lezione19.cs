@@ -37,5 +37,11 @@ namespace Lezione19
         return valore;
     }
 }
+
+
+    // pattern singleton:
+
+    // il problema attuale è che noi possiamo creare più classi (facciamo l'esempio di un garage).. e da utenti senza accorgecene ne creiamo due per la stessa azienda...
+    // per questo dobbiamo utilizzare il pattern singleton, ossia UNA e SOLO UNA classe.
 }
 }
