@@ -1,0 +1,15 @@
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/bin/Debug/net10.0/Animali
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/bin/Debug/net10.0/Animali.deps.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/bin/Debug/net10.0/Animali.runtimeconfig.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/bin/Debug/net10.0/Animali.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/bin/Debug/net10.0/Animali.pdb
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.AssemblyInfoInputs.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.AssemblyInfo.cs
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.csproj.CoreCompileInputs.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.sourcelink.json
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/refint/Animali.dll
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.pdb
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/Animali.genruntimeconfig.cache
+/Users/alessandro/Downloads/2026-2027/Info/C#/PanaitSnippets/5Ottobre/obj/Debug/net10.0/ref/Animali.dll
