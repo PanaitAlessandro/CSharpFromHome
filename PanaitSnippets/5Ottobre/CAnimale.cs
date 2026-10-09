@@ -4,7 +4,7 @@ namespace Animali
 {
     public abstract class CAnimale
     {
-        private string _nome = string.Empty;
+        private string _nome;
         private int _eta;
 
         public string Nome
